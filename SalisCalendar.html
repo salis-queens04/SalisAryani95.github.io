@@ -1,0 +1,72 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>aplikasi kalender salis</title>
+	<link href="JsPlanner/common/samples.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="blue.css" />
+	 <link rel="stylesheet" href="myweb.css">
+	 <link rel="stylesheet" href="dropdown.css">
+	 <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<header>
+<h1 align="center"> Calendar Scheduler - Salis Ariyani</h1>
+		<div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="SalisCalendar.html">Calendar Schedular App</a>
+			<a href="about.html">About</a>
+              <div class="dropdown">
+              <button class="dropbtn">Tutorial 
+                <i class="fa fa-caret-down"></i>
+              </button>
+             <div class="dropdown-content">
+				<a href="java.html">JAVA</a>
+				<a href="vbnet.html">VB.NET</a>
+				<a href="blender.html">3D ANIMATION</a>
+             </div>
+            </div> 
+        </div>
+      <br>
+	 </header>
+  
+	
+	<div id="content">
+		<div style="position: absolute; width: 100%; height: 100%;">
+			<div id="calendar" style="height: 100%; width: 100%;">
+			</div>
+		</div>
+	</div>
+	
+	<button class="open-button" onclick="openForm()">Any Question???</button>
+
+				<div class="form-popup" id="myForm">
+					<form action="/action_page.php" class="form-container">
+					<h1>Send Message</h1>
+
+					<label for="email"><b>Email</b></label>
+					<input type="text" placeholder="Enter Email" name="email" required>
+
+					<label for="message"><b>Message</b></label>
+					<textarea  placeholder="Type your message here :)" name="message" required></textarea>
+
+					<button type="submit" class="btn">Send Message</button>
+					<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+					</form>
+				</div>	
+				
+	<!-- Footer -->
+		 <br><div class="footer"><br>
+         <p>created by Salis Ariyani</p>
+         </div>
+	<script>
+				function openForm() {
+					document.getElementById("myForm").style.display = "block";
+				}
+
+				function closeForm() {
+					document.getElementById("myForm").style.display = "none";
+				}
+	</script>
+	<script src="MindFusion.Scheduling.js" type="text/javascript"></script>
+	<script src="SalisCalendar.js" type="text/javascript"></script>
+</body>
+</html>
